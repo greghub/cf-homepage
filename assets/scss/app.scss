@@ -110,7 +110,7 @@ section.modes {
     height: 1101px;
     background: #FF7400;
     background-image: url(../img/modes@2x.png), linear-gradient(-45deg, #FF7400 0%, #FF5F36 26%, #FF5B3F 30%, #FF2ABA 89%, #FF2ABB 89%, #FF21D1 100%);
-    background-position: center bottom 31px, center center;
+    background-position: center top 72px, center center;
     background-repeat: no-repeat;
     background-size: 850px 929px, cover;
     display: flex;
@@ -120,7 +120,7 @@ section.modes {
     .modes--container {
         height: 753px;
         width: 693px;
-        margin-bottom: 62px;
+        margin-bottom: 132px;
         display: flex;
         justify-content: center;
         position: relative;

@@ -26,9 +26,9 @@
 
         <section class="media" id="media"></section>
 
-        <section class="fun"><img src="public/img/ide@2x.png" width="714"></section>
+        <section class="fun" id="fun"><img src="public/img/ide@2x.png" width="714"></section>
 
-        <section class="modes">
+        <section class="modes" id="modes">
             
             <div class="modes--container">
                 
@@ -261,9 +261,9 @@
                                 //.addIndicators({name: "home"}) // add indicators (requires plugin)
                                 .addTo(controller);
 
-                var scene2 = new ScrollMagic.Scene({triggerElement: "#languages", triggerHook: 0})
-                                .setPin("#languages")
-                                //.addIndicators({name: "langs"}) // add indicators (requires plugin)
+                var scene2 = new ScrollMagic.Scene({triggerElement: "#fun", triggerHook: 0})
+                                .setPin("#fun")
+                                //.addIndicators({name: "fun"}) // add indicators (requires plugin)
                                 .addTo(controller);
 
                 var scene2 = new ScrollMagic.Scene({triggerElement: "#media", triggerHook: 0})
