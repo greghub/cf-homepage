@@ -31,12 +31,16 @@ nav {
   nav.fixed {
     position: fixed;
     top: 0;
+    height: 64px;
     background-color: #472983;
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: fadeIn; }
     nav.fixed .nav-signup {
       display: block; }
+    nav.fixed .logo {
+      height: 30px;
+      width: auto; }
   nav .nav-buttons {
     display: flex;
     align-items: center; }

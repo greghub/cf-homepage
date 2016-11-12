@@ -40,12 +40,17 @@ nav {
     &.fixed {
         position: fixed;
         top: 0;
+        height: 64px;
         background-color: #472983;
         animation-duration: .5s;
         animation-fill-mode: both;  
         animation-name: fadeIn;
         .nav-signup {
             display: block;
+        }
+        .logo {
+            height: 30px;
+            width: auto;
         }
     }
     .nav-buttons {
