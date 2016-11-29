@@ -5,217 +5,306 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/codefights-style.css">
+        <link rel="stylesheet" href="public/css/codefights-style-2.css">
         <link rel="stylesheet" href="public/css/app.css">
     </head>
     <body>
 
-        <nav id="nav">
+        <div class="grid" id="grid">
+            <div class="grid-holder">    
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+                <div class="g"></div>
+            </div>
+        </div>
 
-            <div><img src="public/img/logo@2x.png" width="221" class="logo"></div>
-            <div class="nav-buttons">
-                <img src="public/img/nav-links.png" width="223" class="nav-links">
-                <img src="public/img/nav-sign-up.png" height="36" class="nav-signup">
-                <img src="public/img/nav-log-in.png" height="36">
+        <nav id="nav" class="nav -layout -justify">
+
+            <a class="nav--logo -layout" href="#">
+                <span class="icon -size-48">
+                    <svg width="41" height="41" viewBox="0 0 24 24"><path d="M12 16.5L9.2 6.1 0 4.5l1.7 2.6 5.7.7.7 2.3-3.7-.4 1.3 2 3 .3L12 22.1 15.3 12l3-.3 1.3-2-3.7.4.7-2.3 5.7-.7L24 4.5l-9.2 1.6"></path></svg>
+                </span>
+                <span class="-margin-8 logo-codefights">CodeFights</span>
+            </a>
+            <div class="nav-buttons -layout -center">
+                <a class="for-companies -uppercase" href="#">For Companies</a>
+                <a class="log-in -uppercase" href="#">Log In</a>
             </div>
 
         </nav>
 
-        <section class="home" id="home"></section>
+        <section class="home-section -layout -center-center -align-center -white -padding-0" id="home-section">
+                
+            <div class="content">
 
-        <section class="media" id="media"></section>
+                <h1 class="-white">How <strong>well</strong> you can <strong>code?</strong></h1>
+                <div class="separator -orange"></div>
+                <div class="home-intro">Test your skills VS friends, co-workers, companies and get a <strong>job of your dream!</strong> Join a community of <strong>500,000</strong> devs!</div>
+                <a href="#" class="sign-up -margin-32 -uppercase -animate-on">Sign up free!</a>
 
-        <section class="fun" id="fun"><img src="public/img/ide@2x.png" width="714"></section>
+            </div>
 
-        <section class="modes" id="modes">
+        </section>
+
+        <section class="media -layout -center-center -padding-0" id="media">
+            
+            <div class="container -layout -justify -center">
+                <a class="media-logo -gray-to-color -techcrunch" href="#"></a>
+                <a class="media-logo -gray-to-color -forbes" href="#"></a>
+                <a class="media-logo -gray-to-color -businessinsider" href="#"></a>
+                <a class="media-logo -gray-to-color -fastcompany" href="#"></a>
+                <a class="media-logo -gray-to-color -venturebeat" href="#"></a>
+            </div>
+
+        </section>
+
+        <section class="fun -layout -vertical -justify -center" id="fun">
+
+            <div class="content -align-center">
+
+                <h1><strong>Coding</strong> was never so <strong>fun</strong> before!</h1>
+                <div class="separator -green"></div>
+                <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!” The idea for the startup, says Sloyan, an MIT grad originally from Armenia, was sparked following he and his</div>
+
+            </div>
+
+            <img src="public/img/homepage/ide@2x.png" width="714">
+        </section>
+
+        <section class="modes -layout -vertical -justify -center" id="modes">
+
+            <div class="content -align-center -white -margin-t-64">
+
+                <h1 class="-white">Play different <strong>modes!</strong></h1>
+                <div class="separator -orange-2"></div>
+                <div class="section-intro">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
+
+            </div>
             
             <div class="modes--container">
                 
                 <a class="mode mode-arcade">
-                    <img src="public/img/mode-arcade.svg">
+                    <img src="public/img/modes/mode-arcade.svg">
                     <div class="mode--content">
                         <span class="mode--title">Code Quiz</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
-                    </div></a>
+                    </div>
+                </a>
                 <a class="mode mode-quiz">
-                    <img src="public/img/mode-quiz.svg">
+                    <img src="public/img/modes/mode-quiz.svg">
                     <div class="mode--content">
                         <span class="mode--title">Code Quiz</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
                     </div>
                 </a>
                 <a class="mode mode-tournament">
-                    <img src="public/img/mode-tournament.svg">
+                    <img src="public/img/modes/mode-tournament.svg">
                     <div class="mode--content">
                         <span class="mode--title">Code Tournament</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
-                    </div></a>
+                    </div>
+                </a>
                 <a class="mode mode-bots">
-                    <img src="public/img/mode-bots.png" width="77">
+                    <img src="public/img/modes/mode-bots.png" width="77">
                     <div class="mode--content">
                         <span class="mode--title">Bots</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
-                    </div></a>
+                    </div>
+                </a>
                 <a class="mode mode-head-to-head">
-                    <img src="public/img/mode-head-to-head.svg">
+                    <img src="public/img/modes/mode-head-to-head.svg">
                     <div class="mode--content">
                         <span class="mode--title">Head To Head</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
-                    </div></a>
+                    </div>
+                </a>
                 <a class="mode mode-marathons">
-                    <img src="public/img/mode-marathons.svg">
+                    <img src="public/img/modes/mode-marathons.svg">
                     <div class="mode--content">
                         <span class="mode--title">Marathons</span>
                         <p class="mode--description">Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job.</p>
-                    </div></a>
+                    </div>
+                </a>
 
             </div>
 
         </section>
 
-        <section class="languages" id="languages">
-            <div class="languages--container">
+        <section class="languages -layout -vertical -justify-between -center -padding-0" id="languages">
+
+            <div class="content -align-center -margin-64">
+
+                <h1>Code with <strong>many languages</strong> and become a <strong>Ninja!</strong></h1>
+                <div class="separator -orange"></div>
+                <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
+
+            </div>
+
+            <div class="container">
 
                 <div class="language--row">
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-java.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-java.svg"></div>
                         <span class="language--title">Java</span>
-                    </a>
+                    </div>
 
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-c-plus-plus.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-c-plus-plus.svg"></div>
                         <span class="language--title">C++</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-c-sharp.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-c-sharp.svg"></div>
                         <span class="language--title">C#</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-f-sharp.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-f-sharp.svg"></div>
                         <span class="language--title">F#</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-perl.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-perl.svg"></div>
                         <span class="language--title">Perl</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-python-2.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-python-2.svg"></div>
                         <span class="language--title">Python 2</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-python-3.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-python-3.svg"></div>
                         <span class="language--title">Python 3</span>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="language--row language--row-short">
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-js.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-js.svg"></div>
                         <span class="language--title">Java Script</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-ruby.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-ruby.svg"></div>
                         <span class="language--title">Ruby</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-c.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-c.svg"></div>
                         <span class="language--title">C</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-php.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-php.svg"></div>
                         <span class="language--title">PHP</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-swift.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-swift.svg"></div>
                         <span class="language--title">Swift</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-mysql.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-mysql.svg"></div>
                         <span class="language--title">MySQL</span>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="language--row">
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-scala.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-scala.svg"></div>
                         <span class="language--title">Scala</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-go.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-go.svg"></div>
                         <span class="language--title">Go</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-haskell.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-haskell.svg"></div>
                         <span class="language--title">Haskell</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-sass.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-sass.svg"></div>
                         <span class="language--title">Sass</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-visual-basic.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-visual-basic.svg"></div>
                         <span class="language--title">Visual Basic</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-bash.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-bash.svg"></div>
                         <span class="language--title">Bash</span>
-                    </a>
+                    </div>
                     
-                    <a class="language">
-                        <div class="language--logo"><img src="public/img/lang-r.svg"></div>
+                    <div class="language">
+                        <div class="language--logo"><img src="public/img/languages/lang-r.svg"></div>
                         <span class="language--title">R</span>
-                    </a>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="jobs" id="job">
+        <section class="jobs -layout -vertical -center" id="job">
         
-            <div class="jobs--container">
+            <div class="content -align-center -margin-64">
 
-                <div class="quote"><img src="public/img/quote-datto.png"></div>
+                <h1>Find a <strong>job</strong> in <strong>top</strong> companies!</h1>
+                <div class="separator -orange"></div>
+                <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
+
+            </div>
+
+            <div class="jobs--container -layout -vertical -justify -center">
+
+                <div class="quote container">
+                        <div class="quote--text container">
+                            Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!
+                        </div>
+                        <div class="quote--author">Jessica Janiuk, now @ <span class="quote--author-company">Datto</span></div>
+                </div>
 
                 <div class="people">
                     <a class="people--person active" data-quote="datto">
-                        <div class="person--photo"><img src="public/img/people-datto.jpg"></div>
-                        <div class="person--company"><img src="public/img/company-datto.png" width="50"></div>
+                        <div class="person--photo"><img src="public/img/people/people-datto.jpg"></div>
+                        <div class="person--company"><img src="public/img/partners/color/datto@2x.png" width="50"></div>
                     </a>
 
                     <a class="people--person" data-quote="uber">
-                        <div class="person--photo"><img src="public/img/people-uber.jpg"></div>
-                        <div class="person--company"><img src="public/img/company-uber.png" width="79"></div>
+                        <div class="person--photo"><img src="public/img/people/people-uber.jpg"></div>
+                        <div class="person--company"><img src="public/img/partners/color/uber@2x.png" width="58"></div>
                     </a>
                     
                     <a class="people--person" data-quote="optiver">
-                        <div class="person--photo"><img src="public/img/people-optiver.jpg"></div>
-                        <div class="person--company"><img src="public/img/company-optiver.png" width="81"></div>
+                        <div class="person--photo"><img src="public/img/people/people-optiver.jpg"></div>
+                        <div class="person--company"><img src="public/img/partners/color/optiver@2x.png" width="81"></div>
                     </a>
                     
                     <a class="people--person" data-quote="thumbtack">
-                        <div class="person--photo"><img src="public/img/people-thumbtack.jpg"></div>
-                        <div class="person--company"><img src="public/img/company-thumbtack.png" width="91"></div>
+                        <div class="person--photo"><img src="public/img/people/people-thumbtack.jpg"></div>
+                        <div class="person--company"><img src="public/img/partners/color/thumbtack@2x.png" width="91"></div>
                     </a>
                     
                     <a class="people--person" data-quote="dropbox">
-                        <div class="person--photo"><img src="public/img/people-dropbox.jpg"></div>
-                        <div class="person--company"><img src="public/img/company-dropbox.png" width="77"></div>
+                        <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                        <div class="person--company"><img src="public/img/partners/color/dropbox@2x.png" width="77"></div>
                     </a>
                 </div>
 
@@ -223,18 +312,66 @@
 
         </section>
 
-        <section class="dashboard">
+        <section class="partners -layout -vertical -justify -center -padding-0 -bg-white">
 
-            <div class="dashboard--companies"></div>
-            <div class="dashboard--developers"></div>
+            <div class="content -align-center -margin-32">
+
+                <h1>Our <strong>Partners</strong></h1>
+                <div class="separator -orange"></div>
+                <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
+
+            </div>            
+
+            <div class="partners--container container">
+                <div class="partners-row">
+                    <a class="partner -gray-to-color -dropbox"></a>
+                    <a class="partner -gray-to-color -godaddy"></a>
+                    <a class="partner -gray-to-color -instacart"></a>
+                    <a class="partner -gray-to-color -quora"></a>
+                    <a class="partner -gray-to-color -thumbtack"></a>
+                    <a class="partner -gray-to-color -uber"></a>
+                    <a class="partner -gray-to-color -meraki"></a>
+                    <a class="partner -gray-to-color -optiver"></a>
+                    <a class="partner -gray-to-color -kik"></a>
+                </div>
+                <div class="partners-row">
+                    <a class="partner -gray-to-color -evernote"></a>
+                    <a class="partner -gray-to-color -asana"></a>
+                    <a class="partner -gray-to-color -mz"></a>
+                    <a class="partner -gray-to-color -datto"></a>
+                    <a class="partner -gray-to-color -jet"></a>
+                    <a class="partner -gray-to-color -liveramp"></a>
+                    <a class="partner -gray-to-color -twosigma"></a>
+                    <a class="partner -gray-to-color -twitch"></a>
+                </div>
+                <div class="partners-row">
+                    <a class="partner -gray-to-color -venmo"></a>
+                    <a class="partner -gray-to-color -mixpanel"></a>
+                    <a class="partner -gray-to-color -planet"></a>
+                    <a class="partner -gray-to-color -mesosphere"></a>
+                    <a class="partner -gray-to-color -palantir"></a>
+                    <a class="partner -gray-to-color -wizeline"></a>
+                    <a class="partner -gray-to-color -transferwise"></a>
+                    <a class="partner -gray-to-color -zoomer"></a>
+                </div>
+            </div>
 
         </section>
 
         <footer>
 
-            <div class="col-1"><img src="public/img/footer-logo.png" width="170"></div>
-            <div class="col-2"><img src="public/img/footer-contact.png" width="145"></div>
-            <div class="col-3"><img src="public/img/footer-nav.png" width="316"></div>
+            <div class="footer--copy">&copy; 2016 CodeFights Inc.</div>
+            <div class="footer--social">
+                <a href="#" class="social-button -email"></a>
+                <a href="#" class="social-button -facebook"></a>
+                <a href="#" class="social-button -twitter"></a>
+            </div>
+            <div class="footer--nav">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">For Companies</a>
+            </div>
 
         </footer>
 
@@ -242,6 +379,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
         <script>
+/*
             $(document).on('click', '.people--person', function() {
                 var quote = $(this).data('quote');
 
@@ -271,7 +409,7 @@
                                 //.addIndicators({name: "nav"}) // add indicators (requires plugin)
                                 .addTo(controller);
             })
-
+*/
         </script>
 
     </body>
