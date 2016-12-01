@@ -42,6 +42,7 @@
             </a>
             <div class="nav-buttons -layout -center -hide-xs">
                 <a class="for-companies -uppercase" href="#">For Companies</a>
+                <a class="sign-up -uppercase" href="#">Sign up free!</a>
                 <a class="log-in -uppercase" href="#">Log In</a>
             </div>
 
@@ -73,7 +74,7 @@
 
         </section>
 
-        <section class="fun -layout -vertical -justify -center" id="fun">
+        <section class="fun -layout -vertical -justify -center -padding-0" id="fun">
 
             <div class="content -align-center">
 
@@ -83,7 +84,11 @@
 
             </div>
 
-            <img src="public/img/homepage/ide@2x.png" width="714">
+            <div class="fun--container">
+                <img src="public/img/homepage/fun-section-left@2x.png" width="474" class="ide-left">
+                <img src="public/img/homepage/ide@2x.png" width="714" class="ide-center">
+                <img src="public/img/homepage/fun-section-right@2x.png" width="562" class="ide-right">
+            </div>
         </section>
 
         <section class="modes -layout -vertical -justify -center" id="modes">
@@ -379,37 +384,48 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
         <script>
-/*
-            $(document).on('click', '.people--person', function() {
-                var quote = $(this).data('quote');
 
-                $('.people--person').removeClass('active');
-                $(this).addClass('active');
+            // $(document).on('click', '.people--person', function() {
+            //     var quote = $(this).data('quote');
 
-                $('.quote img').fadeOut('fast', function(img) {
-                    $('.quote img').attr('src', 'public/img/quote-' + quote + '.png');
-                    $('.quote img').fadeIn('fast');
-                });
-            })
+            //     $('.people--person').removeClass('active');
+            //     $(this).addClass('active');
 
-            $(document).ready(function() {
+            //     $('.quote img').fadeOut('fast', function(img) {
+            //         $('.quote img').attr('src', 'public/img/quote-' + quote + '.png');
+            //         $('.quote img').fadeIn('fast');
+            //     });
+            // })
+
+            function scrollMagic() {
                 var controller = new ScrollMagic.Controller();
-                var scene1 = new ScrollMagic.Scene({triggerElement: "#home", triggerHook: 0})
+
+                var pinHome = new ScrollMagic.Scene({triggerElement: "#home", triggerHook: 0})
                                 .setPin("#home")
                                 //.addIndicators({name: "home"}) // add indicators (requires plugin)
                                 .addTo(controller);
 
-                var scene2 = new ScrollMagic.Scene({triggerElement: "#fun", triggerHook: 0})
+                var pinFun = new ScrollMagic.Scene({triggerElement: "#fun", triggerHook: 0})
                                 .setPin("#fun")
                                 //.addIndicators({name: "fun"}) // add indicators (requires plugin)
                                 .addTo(controller);
 
-                var scene2 = new ScrollMagic.Scene({triggerElement: "#media", triggerHook: 0})
+                var pinNavigation = new ScrollMagic.Scene({triggerElement: "#media", triggerHook: 0.3})
                                 .setClassToggle('#nav', 'fixed')
                                 //.addIndicators({name: "nav"}) // add indicators (requires plugin)
-                                .addTo(controller);
+                                .addTo(controller); 
+
+
+                var toggleFun = new ScrollMagic.Scene({triggerElement: "#fun", triggerHook: 0.5})
+                                .setClassToggle(".fun--container", "-visible")
+                                //.addIndicators({name: "fun"}) // add indicators (requires plugin)
+                                .addTo(controller);               
+            }
+
+            $(document).ready(function() {
+                scrollMagic();
             })
-*/
+
         </script>
 
     </body>
