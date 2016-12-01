@@ -135,6 +135,7 @@ body {
             font-size: 16px;
             color: #fff;
             transition: all 0.3s ease;
+            line-height: 12px;
         }
         .for-companies {
             margin: 0 24px;
@@ -143,7 +144,7 @@ body {
             }
         }
         .log-in {
-            padding: 12px 16px;
+            padding: 9px 12px;
             border-radius: 2px;
             border: 1px solid #fff;
             font-weight: 700;
@@ -155,7 +156,7 @@ body {
         }
         .sign-up {
             display: none;
-            padding: 12px 16px;
+            padding: 9px 12px;
             border-radius: 2px;
             font-weight: 700;
             border: 1px solid $green-2;
@@ -370,7 +371,6 @@ section.fun {
             &.ide-left {
                 bottom: -73px;
                 transform: translateX(-1000px);
-                transition-delay: 1s;
             }
             &.ide-center {
                 position: absolute;
@@ -382,7 +382,6 @@ section.fun {
             &.ide-right {
                 bottom: -101px;
                 transform: translateX(1000px);
-                transition-delay: 1s;
             }
         }
         &.-visible {
@@ -391,9 +390,11 @@ section.fun {
                 transition: all 1.2s ease-out;
                 &.ide-left {
                     transform: translateX(0%);
+                    transition-delay: 1s;
                 }
                 &.ide-right {
                     transform: translateX(0%);
+                    transition-delay: 1s;
                 }
             }
         }

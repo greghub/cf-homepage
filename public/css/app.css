@@ -128,13 +128,14 @@ body {
   .nav .nav-buttons a {
     font-size: 16px;
     color: #fff;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    line-height: 12px; }
   .nav .nav-buttons .for-companies {
     margin: 0 24px; }
     .nav .nav-buttons .for-companies:hover {
       color: #FF6545; }
   .nav .nav-buttons .log-in {
-    padding: 12px 16px;
+    padding: 9px 12px;
     border-radius: 2px;
     border: 1px solid #fff;
     font-weight: 700;
@@ -144,7 +145,7 @@ body {
       color: #33485F; }
   .nav .nav-buttons .sign-up {
     display: none;
-    padding: 12px 16px;
+    padding: 9px 12px;
     border-radius: 2px;
     font-weight: 700;
     border: 1px solid #44BFA3;
@@ -320,8 +321,7 @@ section.fun {
       transition-duration: 0.3s; }
       section.fun .fun--container img.ide-left {
         bottom: -73px;
-        transform: translateX(-1000px);
-        transition-delay: 1s; }
+        transform: translateX(-1000px); }
       section.fun .fun--container img.ide-center {
         position: absolute;
         left: 50%;
@@ -330,15 +330,16 @@ section.fun {
         bottom: -12px; }
       section.fun .fun--container img.ide-right {
         bottom: -101px;
-        transform: translateX(1000px);
-        transition-delay: 1s; }
+        transform: translateX(1000px); }
     section.fun .fun--container.-visible img {
       opacity: 1;
       transition: all 1.2s ease-out; }
       section.fun .fun--container.-visible img.ide-left {
-        transform: translateX(0%); }
+        transform: translateX(0%);
+        transition-delay: 1s; }
       section.fun .fun--container.-visible img.ide-right {
-        transform: translateX(0%); }
+        transform: translateX(0%);
+        transition-delay: 1s; }
   @media only screen and (max-width: 480px) {
     section.fun {
       height: auto;
