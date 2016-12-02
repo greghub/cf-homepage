@@ -6,8 +6,9 @@
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="public/css/normalize.css">
-        <link rel="stylesheet" href="public/css/codefights-style.css">
-        <link rel="stylesheet" href="public/css/codefights-style-2.css">
+        <link rel="stylesheet" href="public/css/cf/codefights-style.css">
+        <link rel="stylesheet" href="public/css/cf/codefights-style-2.css">
+        <link rel="stylesheet" href="public/css/cf/codefights-style-3.css">
         <link rel="stylesheet" href="public/css/app.css">
     </head>
     <body>
@@ -41,9 +42,13 @@
                 <img src="public/img/homepage/logo-mobile.svg">
             </a>
             <div class="nav-buttons -layout -center -hide-xs">
-                <a class="for-companies -uppercase" href="#">For Companies</a>
-                <a class="sign-up -uppercase" href="#">Sign up free!</a>
-                <a class="log-in -uppercase" href="#">Log In</a>
+                <a class="-home-primary -uppercase -margin-r-24" href="#">For Companies</a>
+                <div class="button -type-success -size-32 -margin-r-8" role="button" tabindex="0">
+                    <div class="button--content -layout -horizontal -center-center -space-h-8">Sign up free!</div>
+                </div>
+                <div class="button -type-light -view-outline -size-32" role="button" tabindex="0">
+                    <div class="button--content -layout -horizontal -center-center -space-h-8">Log In</div>
+                </div>
             </div>
 
         </nav>
@@ -55,7 +60,9 @@
                 <h1 class="-white">How <strong>well</strong> can you <strong>code?</strong></h1>
                 <div class="separator -orange"></div>
                 <div class="home-intro">Test your skills VS friends, co-workers, companies and get a <strong>job of your dream!</strong> Join a community of <strong>500,000</strong> devs!</div>
-                <a href="#" class="sign-up -margin-32 -uppercase -animate-on -hide-xs">Sign up free!</a>
+                <div class="button -type-success -size-48 -animate-on -margin-32 -hide-xs" role="button" tabindex="0">
+                    <div class="sign-up button--content -layout -horizontal -center-center -space-h-8 -uppercase">Sign up free!</div>
+                </div>
 
             </div>
 
@@ -84,7 +91,7 @@
 
             </div>
 
-            <div class="fun--container">
+            <div class="fun--container -visible">
                 <img src="public/img/homepage/fun-section-left@2x.png" width="474" class="ide-left">
                 <img src="public/img/homepage/ide@2x.png" width="714" class="ide-center">
                 <img src="public/img/homepage/fun-section-right@2x.png" width="562" class="ide-right">
@@ -334,31 +341,31 @@
             </div>            
 
             <div class="partners--container container">
-                <a class="partner -gray-to-color -dropbox"></a>
-                <a class="partner -gray-to-color -godaddy"></a>
-                <a class="partner -gray-to-color -instacart"></a>
-                <a class="partner -gray-to-color -quora"></a>
-                <a class="partner -gray-to-color -thumbtack"></a>
-                <a class="partner -gray-to-color -uber"></a>
-                <a class="partner -gray-to-color -meraki"></a>
-                <a class="partner -gray-to-color -optiver"></a>
-                <a class="partner -gray-to-color -kik"></a>
-                <a class="partner -gray-to-color -evernote"></a>
-                <a class="partner -gray-to-color -asana"></a>
-                <a class="partner -gray-to-color -mz"></a>
-                <a class="partner -gray-to-color -datto"></a>
-                <a class="partner -gray-to-color -jet"></a>
-                <a class="partner -gray-to-color -liveramp"></a>
-                <a class="partner -gray-to-color -twosigma"></a>
-                <a class="partner -gray-to-color -twitch"></a>
-                <a class="partner -gray-to-color -venmo"></a>
-                <a class="partner -gray-to-color -mixpanel"></a>
-                <a class="partner -gray-to-color -planet"></a>
-                <a class="partner -gray-to-color -mesosphere"></a>
-                <a class="partner -gray-to-color -palantir"></a>
-                <a class="partner -gray-to-color -wizeline"></a>
-                <a class="partner -gray-to-color -transferwise"></a>
-                <a class="partner -gray-to-color -zoomer"></a>
+                <div class="partner -gray-to-color -dropbox"></div>
+                <div class="partner -gray-to-color -godaddy"></div>
+                <div class="partner -gray-to-color -instacart"></div>
+                <div class="partner -gray-to-color -quora"></div>
+                <div class="partner -gray-to-color -thumbtack"></div>
+                <div class="partner -gray-to-color -uber"></div>
+                <div class="partner -gray-to-color -meraki"></div>
+                <div class="partner -gray-to-color -optiver"></div>
+                <div class="partner -gray-to-color -kik"></div>
+                <div class="partner -gray-to-color -evernote"></div>
+                <div class="partner -gray-to-color -asana"></div>
+                <div class="partner -gray-to-color -mz"></div>
+                <div class="partner -gray-to-color -datto"></div>
+                <div class="partner -gray-to-color -jet"></div>
+                <div class="partner -gray-to-color -liveramp"></div>
+                <div class="partner -gray-to-color -twosigma"></div>
+                <div class="partner -gray-to-color -twitch"></div>
+                <div class="partner -gray-to-color -venmo"></div>
+                <div class="partner -gray-to-color -mixpanel"></div>
+                <div class="partner -gray-to-color -planet"></div>
+                <div class="partner -gray-to-color -mesosphere"></div>
+                <div class="partner -gray-to-color -palantir"></div>
+                <div class="partner -gray-to-color -wizeline"></div>
+                <div class="partner -gray-to-color -transferwise"></div>
+                <div class="partner -gray-to-color -zoomer"></div>
             </div>
 
         </section>
@@ -423,7 +430,7 @@
             }
 
             $(document).ready(function() {
-                scrollMagic();
+                //scrollMagic();
             })
 
         </script>

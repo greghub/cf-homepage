@@ -7,6 +7,18 @@ body {
     min-width: auto;
 }
 
+a {
+    &.-home-primary {
+        font-size: 16px;
+        color: #fff;
+        transition: all 0.3s ease;
+        line-height: 12px;
+        &:hover {
+            color: $hover-orange;
+        }
+    }
+}
+
 .separator {
     height: 4px;
     margin-top: 10px;
@@ -130,44 +142,6 @@ body {
             display: none;
         }
     }
-    .nav-buttons {
-        a {
-            font-size: 16px;
-            color: #fff;
-            transition: all 0.3s ease;
-            line-height: 12px;
-        }
-        .for-companies {
-            margin: 0 24px;
-            &:hover {
-                color: $hover-orange;
-            }
-        }
-        .log-in {
-            padding: 9px 12px;
-            border-radius: 2px;
-            border: 1px solid #fff;
-            font-weight: 700;
-            box-sizing: border-box;
-            &:hover {
-                background-color: #fff;
-                color: #33485F;
-            }
-        }
-        .sign-up {
-            display: none;
-            padding: 9px 12px;
-            border-radius: 2px;
-            font-weight: 700;
-            border: 1px solid $green-2;
-            background-color: $green-2;
-            margin-right: 8px;
-            &:hover {
-                background-color: lighten($green-2, 20%);
-                border-color: lighten($green-2, 20%);
-            }
-        }
-    }
     .nav-signup {
         margin-right: 16px;
         display: none;
@@ -250,16 +224,6 @@ section.home-section {
         .sign-up {
             font-size: 24px;
             line-height: 32px;
-            padding: 8px 20px;
-            background-color: $green-2;
-            border-radius: 2px;
-            display: inline-block;
-            color: #fff;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-            &:hover {
-                background-color: lighten($green-2, 20%);
-            }
         }
     }
 }

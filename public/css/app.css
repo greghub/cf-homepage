@@ -28,6 +28,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-width: auto; }
 
+a.-home-primary {
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s ease;
+  line-height: 12px; }
+  a.-home-primary:hover {
+    color: #FF6545; }
+
 .separator {
   height: 4px;
   margin-top: 10px;
@@ -125,35 +133,6 @@ body {
   @media only screen and (min-width: 481px) {
     .nav--xs {
       display: none; } }
-  .nav .nav-buttons a {
-    font-size: 16px;
-    color: #fff;
-    transition: all 0.3s ease;
-    line-height: 12px; }
-  .nav .nav-buttons .for-companies {
-    margin: 0 24px; }
-    .nav .nav-buttons .for-companies:hover {
-      color: #FF6545; }
-  .nav .nav-buttons .log-in {
-    padding: 9px 12px;
-    border-radius: 2px;
-    border: 1px solid #fff;
-    font-weight: 700;
-    box-sizing: border-box; }
-    .nav .nav-buttons .log-in:hover {
-      background-color: #fff;
-      color: #33485F; }
-  .nav .nav-buttons .sign-up {
-    display: none;
-    padding: 9px 12px;
-    border-radius: 2px;
-    font-weight: 700;
-    border: 1px solid #44BFA3;
-    background-color: #44BFA3;
-    margin-right: 8px; }
-    .nav .nav-buttons .sign-up:hover {
-      background-color: #90d9c8;
-      border-color: #90d9c8; }
   .nav .nav-signup {
     margin-right: 16px;
     display: none; }
@@ -221,16 +200,7 @@ section.home-section {
           line-height: 24px; } }
     section.home-section .content .sign-up {
       font-size: 24px;
-      line-height: 32px;
-      padding: 8px 20px;
-      background-color: #44BFA3;
-      border-radius: 2px;
-      display: inline-block;
-      color: #fff;
-      font-weight: 700;
-      transition: background-color 0.3s ease; }
-      section.home-section .content .sign-up:hover {
-        background-color: #90d9c8; }
+      line-height: 32px; }
 
 section.media {
   height: 106px;
