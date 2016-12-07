@@ -43,7 +43,7 @@
             </a>
             <div class="nav-buttons -layout -center -hide-xs">
                 <a class="-home-primary -uppercase -margin-r-24" href="#">For Companies</a>
-                <div class="button -type-success -size-32 -margin-r-8" role="button" tabindex="0">
+                <div class="sign-up button -type-success -size-32 -margin-r-8" role="button" tabindex="0">
                     <div class="button--content -layout -horizontal -center-center -space-h-8">Sign up free!</div>
                 </div>
                 <div class="button -type-light -view-outline -size-32" role="button" tabindex="0">
@@ -58,7 +58,7 @@
             <div class="content">
 
                 <h1 class="-white">How <strong>well</strong> can you <strong>code?</strong></h1>
-                <div class="separator -orange"></div>
+                <div class="separator -margin-v-8-xxs-lte -orange"></div>
                 <div class="home-intro">Test your skills VS friends, co-workers, companies and get a <strong>job of your dream!</strong> Join a community of <strong>500,000</strong> devs!</div>
                 <div class="button -type-success -size-48 -animate-on -margin-32 -hide-xs" role="button" tabindex="0">
                     <div class="sign-up button--content -layout -horizontal -center-center -space-h-8 -uppercase">Sign up free!</div>
@@ -81,29 +81,29 @@
 
         </section>
 
-        <section class="fun -layout -vertical -justify -center -padding-0" id="fun">
+        <section class="fun -layout -vertical -justify -center -bg-white -padding-0" id="fun">
 
-            <div class="content -align-center">
+            <div class="content -align-center -padding-24-xxs-lte -padding-v-32-xs-lte">
 
                 <h1><strong>Coding</strong> was never so <strong>fun</strong> before!</h1>
-                <div class="separator -green"></div>
+                <div class="separator -margin-v-8-xxs-lte -green"></div>
                 <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!” The idea for the startup, says Sloyan, an MIT grad originally from Armenia, was sparked following he and his</div>
 
             </div>
 
-            <div class="fun--container -visible">
-                <img src="public/img/homepage/fun-section-left@2x.png" width="474" class="ide-left">
-                <img src="public/img/homepage/ide@2x.png" width="714" class="ide-center">
-                <img src="public/img/homepage/fun-section-right@2x.png" width="562" class="ide-right">
+            <div class="fun--container -layout -center -end -visible -margin-t-32">
+                <img src="public/img/homepage/fun-section-left@2x.png" class="fun-left">
+                <img src="public/img/homepage/fun-section-center@2x.png" class="fun-center">
+                <img src="public/img/homepage/fun-section-right@2x.png" class="fun-right">
             </div>
         </section>
 
-        <section class="modes -layout -vertical -justify -center" id="modes">
+        <section class="modes -layout -vertical -justify -center -padding-0 -padding-24-xs-lte" id="modes">
 
-            <div class="content -align-center -white -margin-t-64">
+            <div class="content -align-center -white -margin-t-64 -margin-b-40-xs-gt">
 
                 <h1 class="-white">Play different <strong>modes!</strong></h1>
-                <div class="separator -orange-2"></div>
+                <div class="separator -margin-v-8-xxs-lte -orange-2"></div>
                 <div class="section-intro">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
 
             </div>
@@ -162,14 +162,15 @@
             <div class="content -align-center -margin-64">
 
                 <h1>Code with <strong>many languages</strong> and become a <strong>Ninja!</strong></h1>
-                <div class="separator -orange"></div>
+                <div class="separator -margin-v-8-xxs-lte -orange"></div>
                 <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
 
             </div>
 
-            <div class="container">
+            <div class="languages--container container">
 
-                <div class="language--row">
+                <div class="languages--row -layout -justify-center -wrap">
+
                     <div class="language">
                         <div class="language--logo"><img src="public/img/languages/lang-java.svg"></div>
                         <span class="language--title">Java</span>
@@ -204,10 +205,8 @@
                         <div class="language--logo"><img src="public/img/languages/lang-python-3.svg"></div>
                         <span class="language--title">Python 3</span>
                     </div>
-                </div>
 
-                <div class="language--row language--row-short">
-                    <div class="language">
+                    <div class="language -break-left">
                         <div class="language--logo"><img src="public/img/languages/lang-js.svg"></div>
                         <span class="language--title">Java Script</span>
                     </div>
@@ -232,13 +231,11 @@
                         <span class="language--title">Swift</span>
                     </div>
                     
-                    <div class="language">
+                    <div class="language -break-right">
                         <div class="language--logo"><img src="public/img/languages/lang-mysql.svg"></div>
                         <span class="language--title">MySQL</span>
                     </div>
-                </div>
 
-                <div class="language--row">
                     <div class="language">
                         <div class="language--logo"><img src="public/img/languages/lang-scala.svg"></div>
                         <span class="language--title">Scala</span>
@@ -273,17 +270,18 @@
                         <div class="language--logo"><img src="public/img/languages/lang-r.svg"></div>
                         <span class="language--title">R</span>
                     </div>
+
                 </div>
 
             </div>
         </section>
 
-        <section class="jobs -layout -vertical -center" id="job">
+        <section class="jobs -layout -vertical -center -padding-0" id="job">
         
             <div class="content -align-center -margin-64">
 
                 <h1>Find a <strong>job</strong> in <strong>top</strong> companies!</h1>
-                <div class="separator -orange"></div>
+                <div class="separator -margin-v-8-xxs-lte -orange"></div>
                 <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
 
             </div>
@@ -301,27 +299,57 @@
                     <div class="people--container">
                         <a class="people--person active" data-quote="datto">
                             <div class="person--photo"><img src="public/img/people/people-datto.jpg"></div>
-                            <div class="person--company"><img src="public/img/partners/color/datto@2x.png" width="50"></div>
+                            <div class="person--company -datto"><img src="public/img/partners/color/datto@2x.png"></div>
                         </a>
 
                         <a class="people--person" data-quote="uber">
                             <div class="person--photo"><img src="public/img/people/people-uber.jpg"></div>
-                            <div class="person--company"><img src="public/img/partners/color/uber@2x.png" width="58"></div>
+                            <div class="person--company -uber"><img src="public/img/partners/color/uber@2x.png"></div>
                         </a>
                         
                         <a class="people--person" data-quote="optiver">
                             <div class="person--photo"><img src="public/img/people/people-optiver.jpg"></div>
-                            <div class="person--company"><img src="public/img/partners/color/optiver@2x.png" width="81"></div>
+                            <div class="person--company -optiver"><img src="public/img/partners/color/optiver@2x.png"></div>
                         </a>
                         
                         <a class="people--person" data-quote="thumbtack">
                             <div class="person--photo"><img src="public/img/people/people-thumbtack.jpg"></div>
-                            <div class="person--company"><img src="public/img/partners/color/thumbtack@2x.png" width="91"></div>
+                            <div class="person--company -thumbtack"><img src="public/img/partners/color/thumbtack@2x.png"></div>
                         </a>
                         
                         <a class="people--person" data-quote="dropbox">
                             <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company"><img src="public/img/partners/color/dropbox@2x.png" width="77"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
+                        </a>
+                        
+                        <a class="people--person" data-quote="dropbox">
+                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
+                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
                         </a>
                     </div>
                 </div>
@@ -335,12 +363,12 @@
             <div class="content -align-center -margin-32">
 
                 <h1>Our <strong>Partners</strong></h1>
-                <div class="separator -orange"></div>
+                <div class="separator -margin-v-8-xxs-lte -orange"></div>
                 <div class="section-intro -blue-grey-40">“Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!!”</div>
 
             </div>            
 
-            <div class="partners--container container">
+            <div class="partners--container container -layout -justify -center -wrap">
                 <div class="partner -gray-to-color -dropbox"></div>
                 <div class="partner -gray-to-color -godaddy"></div>
                 <div class="partner -gray-to-color -instacart"></div>
@@ -370,19 +398,19 @@
 
         </section>
 
-        <footer>
+        <footer class="-layout -justify -center -padding-h-32">
 
-            <div class="footer--copy">&copy; 2016 CodeFights Inc.</div>
-            <div class="footer--social">
-                <a href="#" class="social-button -email"></a>
-                <a href="#" class="social-button -facebook"></a>
-                <a href="#" class="social-button -twitter"></a>
+            <div class="footer--copy -white">&copy; 2016 CodeFights Inc.</div>
+            <div class="footer--social -layout">
+                <a href="#" class="social-button icon -size-32 -margin-h-12 -email"></a>
+                <a href="#" class="social-button icon -size-32 -margin-h-12 -facebook"></a>
+                <a href="#" class="social-button icon -size-32 -margin-h-12 -twitter"></a>
             </div>
-            <div class="footer--nav">
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Jobs</a>
-                <a href="#" class="-hide-xs">For Companies</a>
+            <div class="footer--nav -align-right">
+                <a href="#" class="-uppercase -margin-h-8">About</a>
+                <a href="#" class="-uppercase -margin-h-8">Blog</a>
+                <a href="#" class="-uppercase -margin-h-8">Jobs</a>
+                <a href="#" class="-uppercase -margin-l-8 -hide-s">For Companies</a>
             </div>
 
         </footer>
