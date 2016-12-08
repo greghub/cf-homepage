@@ -575,8 +575,9 @@ section.modes {
       section.modes .modes--container .mode.mode-head-to-head {
         left: 54px;
         bottom: 187px; }
-        section.modes .modes--container .mode.mode-head-to-head img {
-          height: 81px; }
+        @media only screen and (min-width: 1025px) {
+          section.modes .modes--container .mode.mode-head-to-head img {
+            height: 81px; } }
       section.modes .modes--container .mode img {
         height: 56px;
         width: 54px;

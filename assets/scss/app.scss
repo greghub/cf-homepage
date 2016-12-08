@@ -649,7 +649,9 @@ section.modes {
                 left: 54px;
                 bottom: 187px;
                 img {
-                    height: 81px;
+                    @media #{$medium-up} {
+                        height: 81px;
+                    }
                 }
             }
             img {
