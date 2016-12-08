@@ -38,7 +38,7 @@
                 </span>
                 <span class="-margin-8 logo-codefights">CodeFights</span>
             </a>
-            <a class="nav--xs" href="#">
+            <a class="nav--xs -hide-xs-gt" href="#">
                 <img src="public/img/homepage/logo-mobile.svg">
             </a>
             <div class="nav-buttons -layout -center -hide-xs">
@@ -46,11 +46,23 @@
                 <div class="sign-up button -type-success -size-32 -margin-r-8" role="button" tabindex="0">
                     <div class="button--content -layout -horizontal -center-center -space-h-8">Sign up free!</div>
                 </div>
-                <div class="button -type-light -view-outline -size-32" role="button" tabindex="0">
+                <div class="button -type-light -view-outline -size-32" role="button" tabindex="1">
                     <div class="button--content -layout -horizontal -center-center -space-h-8">Log In</div>
                 </div>
             </div>
 
+        </nav>
+
+        <nav class="mobile-nav -layout -justify">
+            <div class="button -type-primary -view-light -shape-rectangle -size-32" role="button" tabindex="0">
+                <div class="button--content -layout -horizontal -center-center -space-h-8">For Companies</div>
+            </div>
+            <div class="button -type-success -size-32 -shape-rectangle" role="button" tabindex="1">
+                <div class="button--content -layout -horizontal -center-center -space-h-8">Sign up free</div>
+            </div>
+            <div class="button -type-primary -size-32 -shape-rectangle" role="button" tabindex="2">
+                <div class="button--content -layout -horizontal -center-center -space-h-8">Log in</div>
+            </div>
         </nav>
 
         <section class="home-section -layout -center-center -align-center -white -padding-0" id="home-section">
@@ -70,7 +82,7 @@
 
         <section class="media -layout -center-center -padding-0" id="media">
             
-            <div class="media--container container -layout -justify -center">
+            <div class="media--container container -layout -justify -center -padding-h-32-xs-lte -padding-h-32-m-gt -padding-h-48-s-lte">
                 <a class="media-logo -gray-to-color -cnn" href="#"></a>
                 <a class="media-logo -gray-to-color -techcrunch" href="#"></a>
                 <a class="media-logo -gray-to-color -forbes" href="#"></a>
@@ -83,7 +95,7 @@
 
         <section class="fun -layout -vertical -justify -center -bg-white -padding-0" id="fun">
 
-            <div class="content -align-center -padding-24-xxs-lte -padding-v-32-xs-lte">
+            <div class="content -align-center -padding-24-xxs-lte -padding-v-32-xs-lte -margin-t-64-s-lte -margin-t-8-xxs-lte -margin-t-0-xs-lte">
 
                 <h1><strong>Coding</strong> was never so <strong>fun</strong> before!</h1>
                 <div class="separator -margin-v-8-xxs-lte -green"></div>
@@ -91,7 +103,7 @@
 
             </div>
 
-            <div class="fun--container -layout -center -end -visible -margin-t-32">
+            <div class="fun--container -layout -center -end -margin-t-32">
                 <img src="public/img/homepage/fun-section-left@2x.png" class="fun-left">
                 <img src="public/img/homepage/fun-section-center@2x.png" class="fun-center">
                 <img src="public/img/homepage/fun-section-right@2x.png" class="fun-right">
@@ -100,7 +112,7 @@
 
         <section class="modes -layout -vertical -justify -center -padding-0 -padding-24-xs-lte" id="modes">
 
-            <div class="content -align-center -white -margin-t-64 -margin-b-40-xs-gt">
+            <div class="content -align-center -white -margin-t-64 -margin-b-40-xs-gt -margin-t-8-xxs-lte -margin-t-0-xs-lte -margin-t-48-s-lte">
 
                 <h1 class="-white">Play different <strong>modes!</strong></h1>
                 <div class="separator -margin-v-8-xxs-lte -orange-2"></div>
@@ -108,7 +120,7 @@
 
             </div>
             
-            <div class="modes--container container">
+            <div class="modes--container container -margin-b-36-s-lte">
                 
                 <div class="mode mode-arcade">
                     <img src="public/img/modes/mode-arcade.svg">
@@ -157,7 +169,7 @@
 
         </section>
 
-        <section class="languages -layout -vertical -justify-between -center -padding-0" id="languages">
+        <section class="languages -layout -vertical -justify-between -center -padding-0 -padding-24-xxs-lte" id="languages">
 
             <div class="content -align-center -margin-64">
 
@@ -206,7 +218,7 @@
                         <span class="language--title">Python 3</span>
                     </div>
 
-                    <div class="language -break-left">
+                    <div class="language">
                         <div class="language--logo"><img src="public/img/languages/lang-js.svg"></div>
                         <span class="language--title">Java Script</span>
                     </div>
@@ -231,7 +243,7 @@
                         <span class="language--title">Swift</span>
                     </div>
                     
-                    <div class="language -break-right">
+                    <div class="language">
                         <div class="language--logo"><img src="public/img/languages/lang-mysql.svg"></div>
                         <span class="language--title">MySQL</span>
                     </div>
@@ -292,7 +304,7 @@
                         <div class="quote--text container">
                             Codefights started as a fun way to practice and improve my coding skills and  turned into multiple job interviews, two job offers, and a great new job as a Front End Software Engineer in Boston. I'm totally blown away!
                         </div>
-                        <div class="quote--author">Jessica Janiuk, now @ <span class="quote--author-company">Datto</span></div>
+                        <div class="quote--author -margin-t-32-s-lte">Jessica Janiuk, now @ <span class="quote--author-company">Datto</span></div>
                 </div>
 
                 <div class="people">
@@ -315,36 +327,6 @@
                         <a class="people--person" data-quote="thumbtack">
                             <div class="person--photo"><img src="public/img/people/people-thumbtack.jpg"></div>
                             <div class="person--company -thumbtack"><img src="public/img/partners/color/thumbtack@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
-                        </a>
-                        
-                        <a class="people--person" data-quote="dropbox">
-                            <div class="person--photo"><img src="public/img/people/people-dropbox.jpg"></div>
-                            <div class="person--company -dropbox"><img src="public/img/partners/color/dropbox@2x.png"></div>
                         </a>
                         
                         <a class="people--person" data-quote="dropbox">
@@ -398,7 +380,7 @@
 
         </section>
 
-        <footer class="-layout -justify -center -padding-h-32">
+        <footer class="-layout-v -layout-v-reverse -justify-around -center -horizontal-s-gt">
 
             <div class="footer--copy -white">&copy; 2016 CodeFights Inc.</div>
             <div class="footer--social -layout">
@@ -420,18 +402,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
         <script>
 
-            // $(document).on('click', '.people--person', function() {
-            //     var quote = $(this).data('quote');
-
-            //     $('.people--person').removeClass('active');
-            //     $(this).addClass('active');
-
-            //     $('.quote img').fadeOut('fast', function(img) {
-            //         $('.quote img').attr('src', 'public/img/quote-' + quote + '.png');
-            //         $('.quote img').fadeIn('fast');
-            //     });
-            // })
-
             function scrollMagic() {
                 var controller = new ScrollMagic.Controller();
 
@@ -450,7 +420,6 @@
                                 //.addIndicators({name: "nav"}) // add indicators (requires plugin)
                                 .addTo(controller); 
 
-
                 var toggleFun = new ScrollMagic.Scene({triggerElement: "#fun", triggerHook: 0.7})
                                 .setClassToggle(".fun--container", "-visible")
                                 //.addIndicators({name: "fun"}) // add indicators (requires plugin)
@@ -458,7 +427,9 @@
             }
 
             $(document).ready(function() {
-                //scrollMagic();
+                if($(window).width() > 768) {
+                    scrollMagic();
+                }
             })
 
         </script>
