@@ -691,8 +691,9 @@ section.languages {
       @media only screen and (max-width: 480px) {
         section.languages .language .language--logo {
           margin-bottom: 6px; } }
-      section.languages .language .language--logo:hover {
-        transform: scale(1.4); }
+      @media only screen and (min-width: 1025px) {
+        section.languages .language .language--logo:hover {
+          transform: scale(1.4); } }
       section.languages .language .language--logo img {
         width: 42px;
         height: 44px; }
@@ -891,8 +892,9 @@ section.jobs {
           border: 6px solid #FFE345; }
           section.jobs .people--container .people--person.active .person--photo img {
             filter: grayscale(0%); }
-        section.jobs .people--container .people--person:hover img {
-          filter: grayscale(0%); }
+        @media only screen and (min-width: 1025px) {
+          section.jobs .people--container .people--person:hover img {
+            filter: grayscale(0%); } }
         section.jobs .people--container .people--person .person--company {
           height: 22px;
           display: flex;

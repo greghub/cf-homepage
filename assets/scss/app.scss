@@ -777,8 +777,10 @@ section.languages {
             @media #{$xxsmall-only} {
                 margin-bottom: 6px;
             }
-            &:hover {
-                transform: scale(1.4);
+            @media #{$medium-up} {
+                &:hover {
+                    transform: scale(1.4);
+                }                
             }
             img {
                 width: 42px;
@@ -1001,9 +1003,11 @@ section.jobs {
                         }
                     }
                 }
-                &:hover {
-                    img { 
-                        filter: grayscale(0%); 
+                @media #{$medium-up} {
+                    &:hover {
+                        img { 
+                            filter: grayscale(0%); 
+                        }
                     }
                 }
                 .person--company {
