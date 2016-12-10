@@ -49,6 +49,9 @@ a.-home-primary {
     .separator {
       margin-top: 10px;
       margin-bottom: 16px; } }
+  @media only screen and (max-width: 768px) {
+    .separator {
+      height: 2px; } }
   .separator.-orange {
     background-color: #FF6545; }
   .separator.-orange-2 {

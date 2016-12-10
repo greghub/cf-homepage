@@ -33,6 +33,9 @@ a {
         margin-top: 10px;
         margin-bottom: 16px;
     }
+    @media #{$xsmall-down} {    
+        height: 2px;
+    }
     &.-orange {
         background-color: #FF6545;
     }
