@@ -65,7 +65,7 @@ a {
         max-width: 960px;
     }
     @media #{$large-up} {
-        width: 1120px;
+        max-width: 1120px;
     }
 }
 
@@ -266,34 +266,34 @@ section.home-section {
 section.media {
     height: 106px;
     background-color: #EEEBF2;
-    display: block;
     overflow-y: scroll;
     @media #{$xxsmall-only} {
         height: 60px;
+        display: block;
     }
     @media #{$xsmall-only} {
         height: 66px;
+        display: block;
     }
     @media #{$small-only} {
         height: 82px;
+        display: block;
     }
     .media--container {
         height: 100%;
         width: 100%;
-        max-width: none;
         @media #{$xxsmall-only} {
             width: 538px;
             padding: 20px;
+            max-width: none;
         }
         @media #{$xsmall-only} {
             width: 840px;
+            max-width: none;
         }
         @media #{$small-only} {
             width: 1150px;
-        }
-        @media #{$medium-only} {
-            width: 100%;
-            justify-content: space-around;
+            max-width: none;
         }
     }
     .media-logo {

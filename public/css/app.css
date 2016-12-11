@@ -78,7 +78,7 @@ a.-home-primary {
       max-width: 960px; } }
   @media only screen and (min-width: 1281px) {
     .container {
-      width: 1120px; } }
+      max-width: 1120px; } }
 
 section .content {
   width: 100%; }
@@ -237,35 +237,35 @@ section.home-section {
 section.media {
   height: 106px;
   background-color: #EEEBF2;
-  display: block;
   overflow-y: scroll; }
   @media only screen and (max-width: 480px) {
     section.media {
-      height: 60px; } }
+      height: 60px;
+      display: block; } }
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     section.media {
-      height: 66px; } }
+      height: 66px;
+      display: block; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     section.media {
-      height: 82px; } }
+      height: 82px;
+      display: block; } }
   section.media .media--container {
     height: 100%;
-    width: 100%;
-    max-width: none; }
+    width: 100%; }
     @media only screen and (max-width: 480px) {
       section.media .media--container {
         width: 538px;
-        padding: 20px; } }
+        padding: 20px;
+        max-width: none; } }
     @media only screen and (min-width: 481px) and (max-width: 768px) {
       section.media .media--container {
-        width: 840px; } }
+        width: 840px;
+        max-width: none; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
       section.media .media--container {
-        width: 1150px; } }
-    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-      section.media .media--container {
-        width: 100%;
-        justify-content: space-around; } }
+        width: 1150px;
+        max-width: none; } }
   section.media .media-logo img {
     width: 100%; }
   section.media .media-logo.-cnn {
