@@ -706,7 +706,10 @@ section.modes {
 section.languages {
     background-color: #EEEBF2;
     .content {
-        @media #{$xsmall-down} {
+        @media #{$xxsmall-only} {
+            margin: 8px 0 24px 0;
+        }
+        @media #{$xsmall-only} {
             margin: 32px 0 24px 0;
         }
         @media #{$small-only} {
@@ -1084,10 +1087,16 @@ section.partners {
             width: 980px;
             max-width: 100%;
         }
+        @media #{$medium-up} {
+            max-width: 100%;
+        }
     }
     .content {
+        @media #{$xxsmall-only} {
+            margin-bottom: 8px;
+        }
         @media #{$xsmall-only} {
-            margin: 0px 0px 42px 0;
+            margin: 0px;
         }
         @media #{$small-only} {
             margin-bottom: 12px;
